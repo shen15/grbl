@@ -129,7 +129,7 @@ static void planner_recalculate()
 {   
   // Initialize block index to the last block in the planner buffer.
   uint8_t block_index = plan_prev_block_index(block_buffer_head);
-        
+
   // Bail. Can't do anything with one only one plan-able block.
   if (block_index == block_buffer_planned) { return; }
       
