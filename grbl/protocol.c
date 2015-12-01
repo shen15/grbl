@@ -71,13 +71,13 @@ void protocol_main_loop()
   // ------------------------------------------------------------
   
   // Print welcome message   
-    for (;;) {
+/*    for (;;) {*/
         report_init_message();
-        if (serial_read() == '$')
-            break;
-        delay_ms(500);
-    }
-  // Check for and report alarm state after a reset, error, or an initial power up.
+        /*if (serial_read() == '$')*/
+            /*break;*/
+        /*delay_ms(500);*/
+    /*}*/
+    // Check for and report alarm state after a reset, error, or an initial power up.
   if (sys.state == STATE_ALARM) {
     report_feedback_message(MESSAGE_ALARM_LOCK); 
   } else {
