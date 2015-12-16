@@ -34,4 +34,6 @@ void spindle_set_state(uint8_t state, float rpm);
 // Kills spindle.
 void spindle_stop();
 
+extern uint8_t spindle_flag;
+
 #endif

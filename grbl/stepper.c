@@ -485,7 +485,7 @@ void stepper_init()
   // TIMSK1 &= ~(1<<OCIE1A);  // Set in st_go_idle().
   
   // Configure Timer 0: Stepper Port Reset Interrupt
-  TIMSK0 &= ~((1<<OCIE0B) | (1<<OCIE0A) | (1<<TOIE0)); // Disconnect OC0 outputs and OVF interrupt.
+  TIMSK0 &= ~((1<<OCIE0B) |  (1 << OCIE0A) | (1<<TOIE0)); // Disconnect OC0 outputs and OVF interrupt.
   TCCR0A = 0; // Normal operation
   TCCR0B = 0; // Disable Timer0 until needed
   TIMSK0 |= (1<<TOIE0); // Enable Timer0 overflow interrupt
