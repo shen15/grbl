@@ -3,5 +3,8 @@
 *.elf
 *.DS_Store
 *.d
+*.vsarduino.h
+*.vmps.xml*
+*.xml*
 
 README.md
