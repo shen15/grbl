@@ -1,0 +1,106 @@
+﻿Compiling 'grbl' for 'Arduino Nano w/ ATmega328'
+Build folder: file:///C:/Users/jx/AppData/Local/V.Micro/Arduino/Builds/grbl/nano_atmega328
+Summary: Header=1 Prototypes=1 Imports=0
+Additional Defines: 
+Architecture Tools: E:\arduino-1.6.5\hardware\tools\avr/bin/
+Sketchbook: file:\\\C:\Users\jx\Documents\Arduino
+Core Include Paths
+Include Path 'Z:\My_data\grbl\grbl'
+Include Path 'E:\arduino-1.6.5\hardware\arduino\avr\cores\arduino'
+Include Path 'E:\arduino-1.6.5\hardware\arduino\avr\variants\eightanaloginputs'
+Build Core Paths: E:\arduino-1.6.5\hardware\arduino\avr\cores\arduino
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\grbl.cpp.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\coolant_control.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\eeprom.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\gcode.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\limits.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\main.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\motion_control.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\nuts_bolts.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\planner.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\print.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\probe.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\protocol.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\report.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\serial.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\settings.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\spindle_control.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\stepper.c.o
+Using previously compiled file: C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\system.c.o
+"E:\arduino-1.6.5\hardware\tools\avr/bin/avr-gcc" -c -g -Os -w -ffunction-sections -fdata-sections -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10605 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR -I"Z:\My_data\grbl\grbl" -I"E:\arduino-1.6.5\hardware\arduino\avr\cores\arduino" -I"E:\arduino-1.6.5\hardware\arduino\avr\variants\eightanaloginputs" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\grbl\stepper.c" -o "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\grbl\stepper.c.o"
+"E:\arduino-1.6.5\hardware\tools\avr/bin/avr-gcc" -w -Os -Wl,--gc-sections -mmcu=atmega328p -o "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.elf" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\grbl.cpp.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\coolant_control.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\eeprom.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\gcode.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\limits.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\main.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\motion_control.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\nuts_bolts.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\planner.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\print.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\probe.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\protocol.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\report.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\serial.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\settings.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\spindle_control.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\stepper.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\system.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328\grbl\stepper.c.o" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/core.a" "-LC:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328" -lm
+"E:\arduino-1.6.5\hardware\tools\avr/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.elf" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.eep"
+"E:\arduino-1.6.5\hardware\tools\avr/bin/avr-objcopy" -O ihex -R .eeprom "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.elf" "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex"
+Binary sketch size: 29,260 bytes (used 95% of a 30,720 byte maximum) (0.91 secs)
+Minimum Memory Usage: 1486 bytes (73% of a 2048 byte maximum)
+ 
+Uploading to I/O board using 'COM4'
+Uploader started for board Arduino Nano w/ ATmega328
+Upload method will be: bootloader
+Uploading via Bootloader 
+E:\arduino-1.6.5\hardware\tools\avr\bin\avrdude "-CE:\arduino-1.6.5\hardware\tools\avr/etc/avrdude.conf" -v -patmega328p -carduino -PCOM4 -b57600 -D "-Uflash:w:C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex:i"
+avrdude: Version 6.0.1, compiled on Apr 15 2015 at 19:59:58
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2009 Joerg Wunsch
+         System wide configuration file is "E:\arduino-1.6.5\hardware\tools\avr/etc/avrdude.conf"
+         Using Port                    : COM4
+         Using Programmer              : arduino
+         Overriding Baud Rate          : 57600
+         AVR Part                      : ATmega328P
+         Chip Erase delay              : 9000 us
+         PAGEL                         : PD7
+         BS2                           : PC2
+         RESET disposition             : dedicated
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65    20     4    0 no       1024    4      0  3600  3600 0xff 0xff
+           flash         65     6   128    0 yes     32768  128    256  4500  4500 0xff 0xff
+           lfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  4500  4500 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+         Programmer Type : Arduino
+         Description     : Arduino
+         Hardware Version: 2
+         Firmware Version: 1.16
+         Vtarget         : 0.0 V
+         Varef           : 0.0 V
+         Oscillator      : Off
+         SCK period      : 0.1 us
+avrdude: AVR device initialized and ready to accept instructions
+Reading | ################################################## | 100% 0.01s
+avrdude: Device signature = 0x1e950f
+avrdude: safemode: lfuse reads as 0
+avrdude: safemode: hfuse reads as 0
+avrdude: safemode: efuse reads as 0
+avrdude: reading input file "C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex"
+avrdude: writing flash (29260 bytes):
+Writing | ################################################## | 100% 9.18s
+avrdude: 29260 bytes of flash written
+avrdude: verifying flash memory against C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex:
+avrdude: load data flash data from input file C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex:
+avrdude: input file C:\Users\jx\AppData\Local\V.Micro\Arduino\Builds\grbl\nano_atmega328/grbl.hex contains 29260 bytes
+avrdude: reading on-chip flash data:
+Reading | ################################################## | 100% 7.04s
+avrdude: verifying ...
+avrdude: 29260 bytes of flash verified
+avrdude: safemode: lfuse reads as 0
+avrdude: safemode: hfuse reads as 0
+avrdude: safemode: efuse reads as 0
+avrdude: safemode: Fuses OK (H:00, E:00, L:00)
+avrdude done.  Thank you.
+Done uploading

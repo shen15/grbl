@@ -310,7 +310,12 @@ void protocol_execute_realtime()
           if (sys.suspend & SUSPEND_ENERGIZE) { 
             // Delayed Tasks: Restart spindle and coolant, delay to power-up, then resume cycle.
             if (gc_state.modal.spindle != SPINDLE_DISABLE) { 
-              spindle_set_state(gc_state.modal.spindle, gc_state.spindle_speed); 
+				if (gc_state.spindle_speed == 0) {
+					spindle_set_state(gc_state.modal.spindle, 1000);
+				}
+				else {
+					spindle_set_state(gc_state.modal.spindle, gc_state.spindle_speed);
+				}
               delay_ms(SAFETY_DOOR_SPINDLE_DELAY); // TODO: Blocking function call. Need a non-blocking one eventually.
             }
             if (gc_state.modal.coolant != COOLANT_DISABLE) { 

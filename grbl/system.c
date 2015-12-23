@@ -71,7 +71,7 @@ ISR(TIMER2_OVF_vect)
 }
 ISR(TIMER2_COMPA_vect)
 {
-	digitalWrite(12, 0);
+	digitalWrite(SPINDLE_PWM_PIN, 0);
 }
 // Returns if safety door is ajar(T) or closed(F), based on pin state.
 uint8_t system_check_safety_door_ajar()

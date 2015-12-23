@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlinkWithoutDelay", "E:\arduino-1.6.6\libraries\My Examples\BlinkWithoutDelay\BlinkWithoutDelay.vcxproj", "{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "grbl", "E:\grbl\grbl\grbl.vcxproj", "{634429FF-78B4-4CB2-903F-385641D1D432}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "grbl", "grbl.vcxproj", "{634429FF-78B4-4CB2-903F-385641D1D432}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Debug|x64.ActiveCfg = Debug|x64
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Debug|x64.Build.0 = Debug|x64
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Debug|x86.ActiveCfg = Debug|Win32
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Debug|x86.Build.0 = Debug|Win32
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Release|x64.ActiveCfg = Release|x64
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Release|x64.Build.0 = Release|x64
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Release|x86.ActiveCfg = Release|Win32
-		{331EA7A0-C3BD-49D1-953A-D6BC4BB4ACFE}.Release|x86.Build.0 = Release|Win32
 		{634429FF-78B4-4CB2-903F-385641D1D432}.Debug|x64.ActiveCfg = Debug|x64
 		{634429FF-78B4-4CB2-903F-385641D1D432}.Debug|x64.Build.0 = Debug|x64
 		{634429FF-78B4-4CB2-903F-385641D1D432}.Debug|x86.ActiveCfg = Debug|Win32

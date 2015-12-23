@@ -64,7 +64,7 @@ int main(void)
     // Reset Grbl primary systems.
     serial_reset_read_buffer(); // Clear serial read buffer
     gc_init(); // Set g-code parser to default state
-    spindle_init();
+	spindle_init();
     coolant_init();
     limits_init(); 
     probe_init();
@@ -74,7 +74,6 @@ int main(void)
     // Sync cleared gcode and planner positions to current system position.
     plan_sync_position();
     gc_sync_position();
-
     // Reset system variables.
     sys.abort = false;
     sys_rt_exec_state = 0;
@@ -82,6 +81,7 @@ int main(void)
     sys.suspend = false;
           
     // Start Grbl main loop. Processes program inputs and executes them.
+	spindle_stop();
     protocol_main_loop();
     
   }
