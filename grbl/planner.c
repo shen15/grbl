@@ -299,10 +299,10 @@ uint8_t plan_check_full_buffer()
         delta_mm = (target_steps[idx] - pl.position[idx])/settings.steps_per_mm[idx];
       }
     #else
-      target_steps[idx] = lround(target[idx]*settings.steps_per_mm[idx]);
-      block->steps[idx] = labs(target_steps[idx]-pl.position[idx]);
-      block->step_event_count = max(block->step_event_count, block->steps[idx]);
-      delta_mm = (target_steps[idx] - pl.position[idx])/settings.steps_per_mm[idx];
+	  target_steps[idx] = lround(target[idx] * settings.steps_per_mm[idx]);
+	  block->steps[idx] = labs(target_steps[idx] - pl.position[idx]);
+	  block->step_event_count = max(block->step_event_count, block->steps[idx]);
+	  delta_mm = (target_steps[idx] - pl.position[idx]) / settings.steps_per_mm[idx];
     #endif
     unit_vec[idx] = delta_mm; // Store unit vector numerator. Denominator computed later.
         

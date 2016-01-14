@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="grbl.ino" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.grbl.vsarduino.h">

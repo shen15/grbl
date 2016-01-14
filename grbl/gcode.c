@@ -848,7 +848,16 @@ uint8_t gc_execute_line(char *line)
   gc_state.feed_rate = gc_block.values.f; // Always copy this value. See feed rate error-checking.
 
   // [4. Set spindle speed ]:
+	if (gc_state.spindle_speed != gc_block.values.s) { 
     // Update running spindle only if not in check mode and not already enabled.
+    if (gc_state.modal.spindle != SPINDLE_DISABLE) { 
+		if (gc_state.spindle_speed == 0) {
+			spindle_run(gc_state.modal.spindle, 1000);
+		}
+		else {
+			spindle_run(gc_state.modal.spindle, gc_block.values.s);
+		}
+	}
     gc_state.spindle_speed = gc_block.values.s; 
   }
   // [5. Select tool ]: NOT SUPPORTED. Only tracks tool value.
@@ -858,6 +867,18 @@ uint8_t gc_execute_line(char *line)
 
   // [7. Spindle control ]:
   if (gc_state.modal.spindle != gc_block.modal.spindle) {
+    // Update spindle control and apply spindle speed when enabling it in this block.
+	  if (gc_block.modal.spindle != SPINDLE_DISABLE) {
+		  if (gc_state.spindle_speed == 0) {
+			  spindle_run(gc_block.modal.spindle, 1000);
+		  }
+		  else {
+			  spindle_run(gc_block.modal.spindle, gc_state.spindle_speed);
+		  }
+	  }
+	  else {
+		  spindle_run(gc_block.modal.spindle, 0);
+	  }
     gc_state.modal.spindle = gc_block.modal.spindle;    
   }
 
