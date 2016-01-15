@@ -65,7 +65,8 @@
 #ifdef VARIABLE_SPINDLE // Z Limit pin and spindle enabled swapped to access hardware PWM on Pin 11.  
   #define Z_LIMIT_BIT	   1 // Uno Digital Pin 12
 #else
-  #define Z_LIMIT_BIT    3  // Uno Digital Pin 11
+//  #define Z_LIMIT_BIT    3  // Uno Digital Pin 11
+#define Z_LIMIT_BIT    4  // Uno Digital Pin 11
 #endif
 #define LIMIT_MASK       ((1<<X_LIMIT_BIT)|(1<<Y_LIMIT_BIT)|(1<<Z_LIMIT_BIT)) // All limit bits
 #define LIMIT_INT        PCIE0  // Pin change interrupt enable pin
@@ -84,7 +85,8 @@
     #define SPINDLE_ENABLE_BIT    3  // Uno Digital Pin 11
   #endif
 #else
-  #define SPINDLE_ENABLE_BIT    4  // Uno Digital Pin 12
+//  #define SPINDLE_ENABLE_BIT    4  // Uno Digital Pin 12
+#define SPINDLE_ENABLE_BIT    3  // Uno Digital Pin 12
 #endif
 #ifndef USE_SPINDLE_DIR_AS_ENABLE_PIN
   #define SPINDLE_DIRECTION_DDR   DDRB
