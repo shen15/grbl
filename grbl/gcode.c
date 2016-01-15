@@ -848,6 +848,7 @@ uint8_t gc_execute_line(char *line)
   gc_state.feed_rate = gc_block.values.f; // Always copy this value. See feed rate error-checking.
 
   // [4. Set spindle speed ]:
+	if (gc_state.spindle_speed != gc_block.values.s) { 
     // Update running spindle only if not in check mode and not already enabled.
     gc_state.spindle_speed = gc_block.values.s; 
   }
